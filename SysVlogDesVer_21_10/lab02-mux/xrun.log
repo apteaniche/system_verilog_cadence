@@ -1,0 +1,446 @@
+xrun: 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	22.03-s012: Started on Sep 02, 2025 at 09:43:52 CDT
+xrun
+	scale_mux.sv
+	scale_mux_test.sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xmvlog: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+file: scale_mux.sv
+	module worklib.scale_mux:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 12
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xmelab: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		scale_mux_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xmvlog_cg: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+		worklib.scale_mux:sv <0x4483bd83>
+			streams:   2, words:   556
+		worklib.scale_mux_test:sv <0x01cc44ee>
+			streams:   8, words: 10879
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 6       6
+		Scalar wires:              1       -
+		Vectored wires:            4       -
+		Always blocks:             1       1
+		Initial blocks:            2       2
+		Pseudo assignments:        4       4
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.scale_mux_test:sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xmsim: *W,DLCVAR (/home/grads/a/apteaniche/cds.lib,13): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.scale_mux_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/coe/cadence/XCELIUM/tools/xcelium/files/xmsimrc
+xcelium> run
+0ns in_a=00 in_b=00 sel_a=0 out=00
+1ns in_a=00 in_b=00 sel_a=1 out=00
+2ns in_a=00 in_b=ff sel_a=0 out=ff
+3ns in_a=00 in_b=ff sel_a=1 out=00
+4ns in_a=ff in_b=00 sel_a=0 out=00
+5ns in_a=ff in_b=00 sel_a=1 out=ff
+6ns in_a=ff in_b=ff sel_a=0 out=ff
+7ns in_a=ff in_b=ff sel_a=1 out=ff
+MUX TEST PASSED
+./scale_mux_test.sv:58       $finish(0) ;
+xcelium> exit
+TOOL:	xrun	22.03-s012: Exiting on Sep 02, 2025 at 09:43:53 CDT  (total: 00:00:01)
