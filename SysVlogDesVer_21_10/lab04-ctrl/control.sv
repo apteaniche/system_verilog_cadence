@@ -11,6 +11,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 // import SystemVerilog package for opcode_t and state_t
+import typedefs::*;;
 
 module control  (
                 output logic      load_ac ,
@@ -30,12 +31,107 @@ timeunit 1ns;
 timeprecision 100ps;
 
 
-always_ff @(posedge clk or negedge rst_)
+state_t state, next_state;
+
+always_ff @(posedge clk or  negedge rst_) begin
   if (!rst_)
-     < add code for initial state>
+	  state <= INST_ADDR;
   else
-     < add code for next state>
+	  state <= next_state;
+end
 
-<add code for output decode>
+always_comb begin
+	unique case (state)
+		INST_ADDR: begin
+			load_ac = 1'b0;
+			mem_rd = 1'b0;
+			mem_wr = 1'b0;
+			inc_pc = 1'b0;
+			load_pc = 1'b0;
+			load_ir = 1'b0;
+			halt = 1'b0;
+			next_state = INST_FETCH;
+		end
 
+		INST_FETCH: begin
+			load_ac = 1'b0;
+			mem_rd = 1'b1;
+			mem_wr = 1'b0;
+			inc_pc = 1'b0;
+			load_pc = 1'b0;
+			load_ir = 1'b0;
+			halt = 1'b0;
+			next_state = INST_LOAD;
+		end
+		INST_LOAD: begin
+			load_ac = 1'b0;
+			mem_rd = 1'b1;
+			mem_wr = 1'b0;
+			inc_pc = 1'b0;
+			load_pc = 1'b0;
+			load_ir = 1'b1;
+			halt = 1'b0;
+			next_state = IDLE;
+		end
+		IDLE: begin
+			load_ac = 1'b0;
+			mem_rd = 1'b1;
+			mem_wr = 1'b0;
+			inc_pc = 1'b0;
+			load_pc = 1'b0;
+			load_ir = 1'b1;
+			halt = 1'b0;
+			next_state = OP_ADDR;
+		end
+		OP_ADDR: begin
+			load_ac = 1'b0;
+			mem_rd = 1'b0;
+			mem_wr = 1'b0;
+			inc_pc = 1'b1;
+			load_pc = 1'b0;
+			load_ir = 1'b0;
+			halt = (opcode === HLT);
+			next_state = OP_FETCH;
+		end
+		OP_FETCH: begin
+			load_ac = 1'b0;
+			mem_rd = (opcode === ADD) || (opcode === AND) || (opcode === XOR) || (opcode === LDA);
+			mem_wr = 1'b0;
+			inc_pc = 1'b0;
+			load_pc = 1'b0;
+			load_ir = 1'b0;
+			halt = 1'b0;
+			next_state = ALU_OP;
+		end
+		ALU_OP: begin
+			load_ac = (opcode === ADD || opcode === AND || opcode === XOR || opcode === LDA);
+			mem_rd = (opcode === ADD || opcode === AND || opcode === XOR || opcode === LDA);
+			mem_wr = 1'b0;
+			inc_pc = (opcode === SKZ && zero == 1'b1);
+			load_pc = (opcode === JMP);
+			load_ir = 1'b0;
+			halt = 1'b0;
+			next_state = STORE;
+		end
+		STORE: begin
+			load_ac = (opcode === ADD || opcode === AND || opcode === XOR || opcode === LDA);
+			mem_rd = (opcode === ADD || opcode === AND || opcode === XOR || opcode === LDA);
+			mem_wr = (opcode === STO);
+			inc_pc = (opcode === JMP);
+			load_pc = (opcode === JMP);
+			load_ir = 1'b0;
+			halt = 1'b0;
+			next_state = INST_ADDR;
+		end
+		default: begin
+			load_ac = 1'bx;
+			mem_rd = 1'bx;
+			mem_wr = 1'bx;
+			inc_pc = 1'bx;
+			load_pc = 1'bx;
+			load_ir = 1'bx;
+			halt = 1'bx;
+		end
+	endcase
+end
 endmodule
