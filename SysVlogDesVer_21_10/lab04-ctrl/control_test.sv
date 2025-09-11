@@ -59,9 +59,9 @@ assign lstate = ctrl.state;
   initial
     begin
       $timeformat ( -9, 1, "ns", 9 );
-      $monitor ("%t rst_=%b ph=%s \t zer=%b op=%s rd=%b l_ir=%b hlt=%b inc=%b l_ac=%b l_pc=%b wr=%b",
+      $monitor ("%t rst_=%b ph=%s \t zer=%b op=%s rd=%b l_ir=%b hlt=%b inc=%b l_ac=%b l_pc=%b wr=%b res_num=%b sti_num=%b sti_reg=%b",
       $time, rst_, lstate.name(), zero, opcode.name(),
-      mem_rd, load_ir, halt, inc_pc, load_ac, load_pc, mem_wr );
+      mem_rd, load_ir, halt, inc_pc, load_ac, load_pc, mem_wr, response_num, stimulus_num, stimulus_reg);
 // SystemVerilog: time units in literals
       #12000ns
       $display ( "CONTROLLER TEST TIMEOUT" );
@@ -72,6 +72,9 @@ assign lstate = ctrl.state;
   initial begin
     $readmemb ( "stimulus.pat", stimulus_mem );
     $readmemb ( "response.pat", response_mem );
+    $display ("Stimulus Mem:");
+    foreach (stimulus_mem[i])
+	    $display ("Data %0h", stimulus_mem[i]);
     stimulus_reg = 0;
     stimulus_num = 0;
     response_num = 0;

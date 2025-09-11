@@ -41,37 +41,91 @@ initial
 
     for (int i = 0; i< 32; i++)
        // Write zero data to every address location
+       write_mem(.debug(debug), .address(i), .write_data('0));
 
     for (int i = 0; i<32; i++)
       begin 
        // Read every address location
+       read_mem(.debug(debug), .address(i), .read_data(rdata));
 
        // check each memory location for data = 'h00
+       if (rdata !== '0) begin
+	       error_status++;
+       end
+
 
       end
 
    // print results of test
+   printstatus(error_status);
 
+   error_status = 0;
     $display("Data = Address Test");
 
     for (int i = 0; i< 32; i++)
        // Write data = address to every address location
+       write_mem(.debug(debug), .address(i), .write_data(i));
        
     for (int i = 0; i<32; i++)
       begin
        // Read every address location
+       read_mem(.debug(debug), .address(i), .read_data(rdata));
 
        // check each memory location for data = address
+       if (rdata !== i) begin
+	       error_status++;
+       end
 
       end
 
    // print results of test
+   printstatus(error_status);
 
     $finish;
   end
 
 // add read_mem and write_mem tasks
+task write_mem (
+	input bit debug = 0,
+	input logic [7:0] write_data,
+	input logic [4:0] address);
+
+	data_in = write_data;
+	addr = address;
+	@ (negedge clk)
+	read = 1'b0;
+	write = 1'b1;
+	@ (negedge clk)
+	write = 1'b0;
+	if (debug) begin
+		$display("WRITE addr=%0d data=%0h", address, write_data);
+	end
+endtask: write_mem
+
+task read_mem(
+	input bit debug = 0,
+	input logic [4:0] address,
+	output logic [7:0] read_data);
+
+	addr = address;
+	@(negedge clk)
+	write = 1'b0; read = 1'b1;
+	@(posedge clk)
+	#1 read_data = data_out;
+	@(negedge clk) read = 1'b0;
+	if (debug) begin
+		$display("READ addr=%0d data=%0h", address, read_data);
+	end
+endtask: read_mem
+
+
 
 // add result print function
+function void printstatus (
+	input int status);
+	
+	if (status == 0) $display("TEST PASSED");
+	else $display("TEST FAILED");
+endfunction: printstatus
 
 endmodule
